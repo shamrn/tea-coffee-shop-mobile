@@ -21,7 +21,7 @@ class StartLoadNavigator extends StatelessWidget {
             if (state is StartLoadLoadedState) {
               SchedulerBinding.instance.addPostFrameCallback((_) {
                 Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/home', (Route<dynamic> route) => false);
+                    '/bottom_bar_navigator', (Route<dynamic> route) => false);
               });
             }
             if (state is StartLoadErrorState) {

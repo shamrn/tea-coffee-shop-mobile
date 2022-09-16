@@ -5,23 +5,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'test',
-            ),
-            Text('test'),
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.blue,
-            )
-          ],
-        ),
+        child: Text('Home screen'),
       ),
     );
   }
