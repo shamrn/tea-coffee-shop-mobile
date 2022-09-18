@@ -84,9 +84,9 @@ flutter:
   # example:
 
   fonts:
-    - family: YanoneKaffeestatz
+    - family: Montserrat
       fonts:
-        - asset: fonts/YanoneKaffeesatz-Regular.ttf
+        - asset: fonts/Montserrat-Regular.ttf
 
 
   #
