@@ -5,6 +5,9 @@ class Texts {
   static String loadError =
       'Не удалось загрузить приложение. \nПовторите попытку позже.';
   static String searchHintText = 'Улун молочный & Чай ...';
+
+  static String teaLinkTitle = 'Чай';
+  static String coffeeLinkTitle = 'Кофе';
 }
 
 // Images
