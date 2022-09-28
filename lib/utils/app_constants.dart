@@ -10,6 +10,8 @@ class Texts {
 // Images
 class Assets {
   static String splashScreen = 'assets/images/splash_screen_image.png';
+  static String teaLink = 'assets/images/tea_link_image.png';
+  static String coffeeLink = 'assets/images/coffee_link_image.png';
 }
 
 // Styles
