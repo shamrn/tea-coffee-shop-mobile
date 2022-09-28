@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
     return BlocProvider<BottomBarCubit>(
       create: (context) => BottomBarCubit(),
       child: MaterialApp(
-        theme: ThemeData(fontFamily: Styles.montserratFont),
+        theme: ThemeData(
+            fontFamily: Styles.montserratFont, canvasColor: Colors.white),
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
         routes: {
