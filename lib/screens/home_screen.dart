@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tea_coffee_shop/utils/app_constants.dart';
+import 'package:tea_coffee_shop/widgets/category_widget.dart';
 import 'package:tea_coffee_shop/widgets/search_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,7 +12,13 @@ class HomeScreen extends StatelessWidget {
         body: SafeArea(
       child: Padding(
         padding: Styles.primaryPadding,
-        child: const SearchWidget(),
+        child: Column(
+          children: const <Widget>[
+            SearchWidget(),
+            SizedBox(height: 20),
+            CategoriesListViewWidget(),
+          ],
+        ),
       ),
     ));
   }
