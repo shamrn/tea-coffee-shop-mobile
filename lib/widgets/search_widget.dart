@@ -9,26 +9,39 @@ class SearchWidget extends StatefulWidget {
 }
 
 class _SearchWidgetState extends State<SearchWidget> {
+
+  static const primarySize = 62.0;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 62,
+      height: primarySize,
       child: TextFormField(
         decoration: InputDecoration(
-            prefixIcon: Icon(
-              Icons.search_outlined,
-              color: Styles.primaryGreyColor,
-              size: 32,
-            ),
-            suffixIcon: Image.asset(
-              Assets.filter,
-              fit: BoxFit.fill,
+            suffixIcon: ClipOval(
+              child: Material(
+                color: Styles.primaryOrangeColor,
+                child: InkWell(
+                  splashColor: Styles.primaryGreenColor,
+                  splashFactory: InkRipple.splashFactory,
+                  onTap: () {},
+                  child: const SizedBox(
+                    width: primarySize,
+                    height: primarySize,
+                    child: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                      size: 35,
+                    ),
+                  ),
+                ),
+              ),
             ),
             hintText: Texts.searchHintText,
             hintMaxLines: 1,
             hintStyle:
-                TextStyle(color: Styles.primaryLightGreyColor, fontSize: 16),
+                TextStyle(color: Styles.primaryLightGreyColor, fontSize: 18),
             enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: Styles.primaryLightGreyColor),
                 borderRadius: const BorderRadius.all(Radius.circular(120))),
