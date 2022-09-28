@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // Texts
 class Texts {
-  static String startLoadError =
+  static String loadError =
       'Не удалось загрузить приложение. \nПовторите попытку позже.';
   static String searchHintText = 'Улун молочный & Чай ...';
 }
@@ -10,13 +10,12 @@ class Texts {
 // Images
 class Assets {
   static String splashScreen = 'assets/images/splash_screen_image.png';
-  static String filter = 'assets/icons/filter_icon.png';
 }
 
 // Styles
 class Styles {
   // Fonts
-  static String yanoneKafeesatzFont = 'fonts/YanoneKaffeesatz-Regular.ttf';
+  static String montserratFont = 'Montserrat';
 
   // Colors
   static Color primaryGreenColor = const Color(0xFF344B31);
@@ -27,4 +26,12 @@ class Styles {
   // Paddings
   static EdgeInsets primaryPadding =
       const EdgeInsets.only(top: 20, bottom: 30, left: 22, right: 22);
+}
+
+// Api access
+class ApiAccess {
+  static String rootUrl = 'https://vladislav111.pythonanywhere.com/api/';
+
+  // Endpoints
+  static String categoriesEndpoint = 'products/categories/';
 }
