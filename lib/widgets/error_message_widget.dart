@@ -14,8 +14,8 @@ class ErrorMessageWidget extends StatelessWidget {
       insetPadding: EdgeInsets.zero,
       backgroundColor: Colors.white.withOpacity(0.5),
       content: Text(
-        Texts.startLoadError,
-        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+        Texts.loadError,
+        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
         maxLines: 2,
         softWrap: false,
       ),
