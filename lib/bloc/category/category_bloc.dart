@@ -14,7 +14,7 @@ class CategoryBloc extends Bloc<CategoryEvent, CategoryState> {
 
       try {
         final List<Category> categories =
-            await categoryRepository.getCategories();
+            await categoryRepository.getCategory();
         emit(CategoryLoadedState(categories: categories));
       } catch (_) {
         emit(CategoryErrorState());

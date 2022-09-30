@@ -7,15 +7,9 @@ import 'package:tea_coffee_shop/services/category/category_repository.dart';
 import 'package:tea_coffee_shop/utils/app_constants.dart';
 import 'package:tea_coffee_shop/widgets/error_message_widget.dart';
 
-class CategoriesListViewWidget extends StatefulWidget {
-  const CategoriesListViewWidget({Key? key}) : super(key: key);
+class CategoryListViewWidget extends StatelessWidget {
+  const CategoryListViewWidget({Key? key}) : super(key: key);
 
-  @override
-  State<CategoriesListViewWidget> createState() =>
-      _CategoriesListViewWidgetState();
-}
-
-class _CategoriesListViewWidgetState extends State<CategoriesListViewWidget> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -53,18 +47,13 @@ class _CategoriesListViewWidgetState extends State<CategoriesListViewWidget> {
   }
 }
 
-class CategoryWidget extends StatefulWidget {
+class CategoryWidget extends StatelessWidget {
+  static const borderRadiusValue = 50.0;
+
   final String categoryName;
 
   const CategoryWidget({Key? key, required this.categoryName})
       : super(key: key);
-
-  @override
-  State<CategoryWidget> createState() => _CategoryWidgetState();
-}
-
-class _CategoryWidgetState extends State<CategoryWidget> {
-  static const borderRadiusValue = 50.0;
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +68,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
           borderRadius: BorderRadius.circular(borderRadiusValue),
         ),
         child: Center(
-            child: Text(widget.categoryName,
+            child: Text(categoryName,
                 style: TextStyle(
                     fontSize: 16,
                     color: Styles.primaryGreenColor,

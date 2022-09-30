@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
           children: const <Widget>[
             SearchWidget(),
             SizedBox(height: 20),
-            CategoriesListViewWidget(),
+            CategoryListViewWidget(),
             SizedBox(height: 40),
             TeaCoffeeLinkWidget(),
           ],
