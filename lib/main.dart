@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
       create: (context) => BottomBarCubit(),
       child: MaterialApp(
         theme: ThemeData(
-            fontFamily: Styles.montserratFont, canvasColor: Colors.white),
+            fontFamily: Styles.montserratFont,
+            canvasColor: Styles.primaryWhiteColor),
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
         routes: {
