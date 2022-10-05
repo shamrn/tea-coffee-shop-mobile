@@ -26,12 +26,12 @@ class _SearchWidgetState extends State<SearchWidget> {
                   splashColor: Styles.primaryGreenColor,
                   splashFactory: InkRipple.splashFactory,
                   onTap: () {},
-                  child: const SizedBox(
+                  child: SizedBox(
                     width: primarySize,
                     height: primarySize,
                     child: Icon(
                       Icons.search,
-                      color: Colors.white,
+                      color: Styles.primaryWhiteColor,
                       size: 35,
                     ),
                   ),
