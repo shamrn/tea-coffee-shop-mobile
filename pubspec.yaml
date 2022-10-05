@@ -74,6 +74,7 @@ flutter:
     - assets/images/splash_screen_image.png
     - assets/images/coffee_link_image.png
     - assets/images/tea_link_image.png
+    - assets/images/default_product_image.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
