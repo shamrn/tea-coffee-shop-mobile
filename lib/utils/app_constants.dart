@@ -8,6 +8,14 @@ class Texts {
 
   static String teaLinkTitle = 'Чай';
   static String coffeeLinkTitle = 'Кофе';
+
+  static String firstProductSectionTitle = 'Все товары';
+  static String firstProductSectionButton = 'ещё';
+
+  static String buttonOpenProductText = 'Открыть';
+
+  static String volumeTypeText = 'г.';
+  static String currencyShortName = 'руб.';
 }
 
 // Images
@@ -27,10 +35,14 @@ class Styles {
   static Color primaryOrangeColor = const Color(0xFFFFAA23);
   static Color primaryGreyColor = const Color(0xFF8B8F8F);
   static Color primaryLightGreyColor = const Color(0xFFB6BABA);
+  static Color primaryWhiteColor = Colors.white;
 
   // Paddings
   static EdgeInsets primaryPadding =
       const EdgeInsets.only(top: 20, bottom: 30, left: 22, right: 22);
+
+  static TextStyle productTitleTextStyle =
+      TextStyle(color: primaryGreyColor, fontSize: 18);
 }
 
 // Api access
@@ -39,4 +51,5 @@ class ApiAccess {
 
   // Endpoints
   static String categoriesEndpoint = 'products/categories/';
+  static String productsEndpoint = 'products/';
 }
