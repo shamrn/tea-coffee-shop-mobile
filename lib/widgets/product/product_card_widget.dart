@@ -3,14 +3,14 @@ import 'package:tea_coffee_shop/models/product.dart';
 import 'package:tea_coffee_shop/utils/app_constants.dart';
 import 'package:tea_coffee_shop/utils/functions.dart';
 
-class ProductWidget extends StatelessWidget {
+class ProductCardWidget extends StatelessWidget {
   final double width;
   final double height;
 
   final Map<String, Color> colorSet;
   final Product product;
 
-  const ProductWidget(
+  const ProductCardWidget(
       {Key? key,
       required this.colorSet,
       required this.product,
