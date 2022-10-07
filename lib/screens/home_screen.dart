@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tea_coffee_shop/utils/app_constants.dart';
 import 'package:tea_coffee_shop/widgets/category_widget.dart';
-import 'package:tea_coffee_shop/widgets/product_widget.dart';
+import 'package:tea_coffee_shop/widgets/product_list_home_widget.dart';
 import 'package:tea_coffee_shop/widgets/search_widget.dart';
 import 'package:tea_coffee_shop/widgets/tea_coffee_link_widget.dart';
 
@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 40),
               TeaCoffeeLinkWidget(),
               SizedBox(height: 40),
-              ProductListViewWidget(),
+              ProductListHomeViewWidget(),
             ],
           ),
         ),

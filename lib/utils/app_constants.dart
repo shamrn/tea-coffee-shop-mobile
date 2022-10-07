@@ -37,12 +37,29 @@ class Styles {
   static Color primaryLightGreyColor = const Color(0xFFB6BABA);
   static Color primaryWhiteColor = Colors.white;
 
+  static Map<String, Map<String, Color>> productColorSets = {
+    'firstSet': {
+      'canvas': primaryGreenColor,
+      'name': primaryWhiteColor,
+      'buttonBackground': primaryWhiteColor,
+    },
+    'secondSet': {
+      'canvas': primaryWhiteColor,
+      'name': primaryGreenColor,
+      'buttonBackground': primaryGreenColor,
+    }
+  };
+
   // Paddings
   static EdgeInsets primaryPadding =
       const EdgeInsets.only(top: 20, bottom: 30, left: 22, right: 22);
 
   static TextStyle productTitleTextStyle =
       TextStyle(color: primaryGreyColor, fontSize: 18);
+
+  // Sizes
+  static double productHomeListHeight = 500.0;
+  static double productHomeListWidth = 260.0;
 }
 
 // Api access
