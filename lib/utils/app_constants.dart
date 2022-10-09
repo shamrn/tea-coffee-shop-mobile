@@ -12,7 +12,7 @@ class Texts {
   static String firstProductSectionTitle = 'Все товары';
   static String firstProductSectionButton = 'ещё';
 
-  static String buttonOpenProductText = 'Открыть';
+  static String buttonOpenProductText = 'Купить';
 
   static String volumeTypeText = 'г.';
   static String currencyShortName = 'руб.';
@@ -58,8 +58,12 @@ class Styles {
       TextStyle(color: primaryGreyColor, fontSize: 18);
 
   // Sizes
+  static double productListHeight = 540.0;
+  static double productListWidth = 160;
+
   static double productHomeListHeight = 500.0;
   static double productHomeListWidth = 260.0;
+
 }
 
 // Api access
