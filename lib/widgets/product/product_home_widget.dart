@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tea_coffee_shop/utils/app_constants.dart';
-import 'package:tea_coffee_shop/widgets/product/product_bloc_provider_widget.dart';
+import 'package:tea_coffee_shop/widgets/product/product_bloc_provider_widgets.dart';
 
-class ProductListHomeViewWidget extends StatelessWidget {
-  const ProductListHomeViewWidget({Key? key}) : super(key: key);
+class ProductHomeWidget extends StatelessWidget {
+  const ProductHomeWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,9 +33,7 @@ class ProductListHomeViewWidget extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 10),
-        const ProductBlocProviderWidget(
-          scrollDirection: Axis.horizontal,
-        ),
+        const ProductHomeBlocProviderWidget(),
       ],
     );
   }
